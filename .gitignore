@@ -1,0 +1,33 @@
+# Compiled class file
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.gradle
+!gradle-wrapper.jar
+
+.settings
+bin
+build
+eclipce
+licenses
+run
+
+.classpath
+.project
+*.launch
+*.properties
+.metadata
+Servers
+buildlog.txt
+
+!gradle/wrapper/gradle-wrapper.properties

@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+repositories {
+  maven {
+    name 'progs'
+    url "http://dvs1.progwml6.com/files/maven"
+  }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0"
+group = "com.defeatedcrow.json_sample"
+archivesBaseName = "JsonSampleDC"
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2847"
+    runDir = "run"
+    useDepAts = true
+    mappings = "snapshot_20171003"
+}
+
+dependencies {
+    deobfCompile "mezz.jei:jei_1.12.2:4.16.1.301"
+}
+
+processResources {}
+
+jar {
+    exclude '**/Thumbs.db'
+}
+
+tasks.withType(Jar) {
+    compileJava.options.encoding = 'UTF-8'
+}
+tasks.withType(Jar) {
+    compileApiJava.options.encoding = 'UTF-8'
+}
+tasks.withType(Jar) {
+    compileTestJava.options.encoding = 'UTF-8'
+}

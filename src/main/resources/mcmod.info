@@ -1,0 +1,16 @@
+[
+{
+  "modid": "json_sample",
+  "name": "JsonSampleDC",
+  "description": "JSON IO sample mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["defeatedcrow"],
+  "credits": "defeatedcrow",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
